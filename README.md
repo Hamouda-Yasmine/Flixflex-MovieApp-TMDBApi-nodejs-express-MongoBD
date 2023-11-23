@@ -46,21 +46,7 @@ This is the backend application for the Movie App project. It provides endpoints
 2. Install dependencies using `npm install`.
 3. Set up a MongoDB Atlas cluster and update the connection string in `connectBD.ts`.
 4. Obtain a TMDB API key and update the `apiKey` variable in `index.ts`.
-## Running the Application
 
-  ### Production
-
-To start the application in production mode:
-
-```bash 
-npm start
-```
-### Development
-
-Certainly! Here's the updated section in your README file regarding running the application:
-
-markdown
-Copy code
 ## Running the Application
 
 ### Production
