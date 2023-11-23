@@ -4,16 +4,24 @@
 
 
 
-# FlexFlix Movie App Backend
+# FlixFlex Movie App Backend
 
 This is the backend application for the Movie App project. It provides endpoints to interact with movie and TV show data, user authentication, and user favorites.
 
 ## Table of Contents
-- [FlexFlix Movie App Backend](#flexflix-movie-app-backend)
+- [FlixFlex Movie App Backend](#flixflex-movie-app-backend)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+    - [Production](#production)
+    - [Development](#development)
+  - [Running the Application](#running-the-application-1)
+    - [Production](#production-1)
+    - [Development](#development-1)
+  - [External APIs](#external-apis)
+    - [API Key](#api-key)
   - [Endpoints](#endpoints)
   - [User Authentication](#user-authentication)
   - [Favorites](#favorites)
@@ -32,11 +40,54 @@ This is the backend application for the Movie App project. It provides endpoints
 - MongoDB Atlas account (for database)
 
 ### Installation
-1. Clone the repository.
+1. Clone the repository:
+     ```bash
+   git clone https://github.com/Hamouda-Yasmine/Flixflex-MovieApp-TMDBApi-nodejs-express-MongoBD.git
 2. Install dependencies using `npm install`.
 3. Set up a MongoDB Atlas cluster and update the connection string in `connectBD.ts`.
 4. Obtain a TMDB API key and update the `apiKey` variable in `index.ts`.
+## Running the Application
 
+  ### Production
+
+To start the application in production mode:
+
+```bash 
+npm start
+```
+### Development
+
+Certainly! Here's the updated section in your README file regarding running the application:
+
+markdown
+Copy code
+## Running the Application
+
+### Production
+
+To start the application in production mode:
+
+```bash
+npm start
+```
+### Development
+For development with automatic server restarts on file changes, run:
+```bash
+npm run dev
+```
+## External APIs
+
+This project utilizes the following external APIs:
+
+- [The Movie Database (TMDb)](https://www.themoviedb.org/documentation/api): The Movie Database provides a rich set of APIs for accessing movie and TV show information.
+
+### API Key
+
+To use the TMDb API, you need to obtain an API key. Follow these steps to get your API key:
+
+1. Create an account on [TMDb](https://www.themoviedb.org/).
+2. Log in and navigate to the [API section](https://www.themoviedb.org/settings/api).
+3. Create a new API application and obtain your API key.
 ## Endpoints
 
 - `POST /signup`: User registration.
